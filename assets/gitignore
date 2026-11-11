@@ -1,0 +1,16 @@
+# Ambiente isolado do gerador do relatório (reportlab + matplotlib).
+# Recriar com:
+#   python -m venv docs/security-audit/.venv
+#   docs/security-audit/.venv/Scripts/python.exe -m pip install reportlab matplotlib
+.venv/
+
+# Rascunhos da rodada: candidatos dos caçadores antes da validação independente.
+# O que vale é o que está em registros/.
+.trabalho/
+
+# Patches sugeridos: descrevem a falha tanto quanto o relatório e são descartáveis.
+patches/
+
+# Artefatos temporários dos gráficos (removidos pelo gerador ao final).
+_grafico-*.png
+__pycache__/
